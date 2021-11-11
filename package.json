@@ -1,0 +1,11 @@
+{
+  "name": "intro-component-with-signup-form",
+  "version": "1.0.0",
+  "description": "a static landing page for conversion",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Attah <mailenemona@gmail.com>",
+  "license": "MIT"
+}
