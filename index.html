@@ -2,13 +2,8 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="HandheldFriendly" content="true" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -18,21 +13,12 @@
     />
 
     <!-- Your personal font awesome 5 kit -->
-    <script
-      src="https://kit.fontawesome.com/ddc4c3e78e.js"
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
-    ></script>
-    <!-- jQuery Library & File, always update file -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <!-- Ion Icons -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
+    />
 
     <title>Frontend Mentor | Intro component with signup form</title>
 
@@ -46,118 +32,122 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="top-container">
-        <div class="left-container">
-          <h3 class="title">Learn to code by watching others</h3>
-          <p class="text">
-            See how experienced developers solve problems in real-time. Watching
-            scripted tutorials is great, but understanding how developers think
-            is invaluable.
-          </p>
+    <div class="top-container">
+      <header class="left-container">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p class="text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+      <main class="right-container">
+        <div class="header-box">
+          <h2 class="header-text">
+            <span class="header-span">Try it free 7 days</span> then $20/mo.
+            thereafter
+          </h2>
         </div>
-        <div class="right-container">
-          <div class="header-box">
-            <p class="header-text">
-              <span class="header-span">Try it free 7 days</span> then $20/mo.
-              thereafter
+        <div class="signup-box">
+          <form
+            name="SubscriberForm"
+            action="#"
+            onsubmit="return validateForm()"
+            method="post"
+            class="form-group"
+          >
+            <div class="input-container">
+              <input
+                type="text"
+                placeholder="First Name"
+                id="first-name"
+                class="input"
+              />
+              <img
+                id="fn-warning-icon"
+                src="./images/icon-error.svg"
+                alt="warning icon"
+              />
+              <span id="fn-warning-text">First Name cannot be empty</span>
+            </div>
+            <div class="input-container">
+              <input
+                type="text"
+                placeholder="Last Name"
+                id="last-name"
+                class="input"
+              />
+              <img
+                id="ln-warning-icon"
+                src="./images/icon-error.svg"
+                alt="warning icon"
+              />
+              <span id="ln-warning-text">Last Name cannot be empty</span>
+            </div>
+            <div class="input-container">
+              <input
+                type="email"
+                placeholder="Email Address"
+                id="email"
+                class="input"
+              />
+              <img
+                id="em-warning-icon"
+                src="./images/icon-error.svg"
+                alt="warning icon"
+              />
+              <span id="em-warning-text"
+                >Looks like this is empty or not an email</span
+              >
+            </div>
+            <div class="input-container">
+              <input
+                type="password"
+                placeholder="Password"
+                id="password"
+                class="input"
+              />
+              <img
+                id="pw-warning-icon"
+                src="./images/icon-error.svg"
+                alt="warning icon"
+              />
+              <span id="pw-warning-text">Password cannot be empty or weak</span>
+            </div>
+            <input
+              type="submit"
+              value="CLAIM YOUR FREE TRIAL"
+              id="submit"
+              class="submit"
+            />
+          </form>
+          <div class="terms-group">
+            <p class="terms-para">
+              By clicking the button, you are agreeing to our
+              <a href="#" class="terms-anchor">Terms and Services</a>
             </p>
           </div>
-          <div class="signup-box">
-            <form
-              name="SubscriberForm"
-              action="#"
-              onsubmit="return validateForm()"
-              method="post"
-              class="form-group"
-            >
-              <div class="input-container">
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  id="first-name"
-                  class="input"
-                />
-                <img
-                  id="fn-warning-icon"
-                  src="./images/icon-error.svg"
-                  alt="warning icon"
-                />
-                <span id="fn-warning-text">First Name cannot be empty</span>
-              </div>
-              <div class="input-container">
-                <input
-                  type="text"
-                  placeholder="Last Name"
-                  id="last-name"
-                  class="input"
-                />
-                <img
-                  id="ln-warning-icon"
-                  src="./images/icon-error.svg"
-                  alt="warning icon"
-                />
-                <span id="ln-warning-text">Last Name cannot be empty</span>
-              </div>
-              <div class="input-container">
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  id="email"
-                  class="input"
-                />
-                <img
-                  id="em-warning-icon"
-                  src="./images/icon-error.svg"
-                  alt="warning icon"
-                />
-                <span id="em-warning-text"
-                  >Looks like this is empty or not an email</span
-                >
-              </div>
-              <div class="input-container">
-                <input
-                  type="password"
-                  placeholder="Password"
-                  id="password"
-                  class="input"
-                />
-                <img
-                  id="pw-warning-icon"
-                  src="./images/icon-error.svg"
-                  alt="warning icon"
-                />
-                <span id="pw-warning-text"
-                  >Password cannot be empty or weak</span
-                >
-              </div>
-              <input
-                type="submit"
-                value="CLAIM YOUR FREE TRIAL"
-                id="submit"
-                class="submit"
-              />
-            </form>
-            <div class="terms-group">
-              <p class="terms-para">
-                By clicking the button, you are agreeing to our
-                <a href="#" class="terms-anchor">Terms and Services</a>
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-      <footer class="attr-container">
-        <p class="attr">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by
-          <a href="https://twitter.com/miikeattah" target="_blank">Mike Attah</a
-          >.
-        </p>
-      </footer>
+      </main>
     </div>
+    <footer class="attr-container">
+      <p class="attr">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://twitter.com/miikeattah"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Mike Attah</a
+        >.
+      </p>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
