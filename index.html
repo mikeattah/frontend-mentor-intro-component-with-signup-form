@@ -49,13 +49,7 @@
           </h2>
         </div>
         <div class="signup-box">
-          <form
-            name="SubscriberForm"
-            action="#"
-            onsubmit="return validateForm()"
-            method="post"
-            class="form-group"
-          >
+          <form class="form-group" id="form">
             <div class="input-container">
               <input
                 type="text"
@@ -114,12 +108,9 @@
               />
               <span id="pw-warning-text">Password cannot be empty or weak</span>
             </div>
-            <input
-              type="submit"
-              value="CLAIM YOUR FREE TRIAL"
-              id="submit"
-              class="submit"
-            />
+            <button type="submit" id="submit" class="submit">
+              CLAIM YOUR FREE TRIAL
+            </button>
           </form>
           <div class="terms-group">
             <p class="terms-para">
