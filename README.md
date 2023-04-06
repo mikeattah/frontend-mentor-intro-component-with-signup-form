@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/html5-css3-javascript-jquery-Jm2bkJUt3)
-- Live Site URL: [GitHub Pages](https://mikeattah.github.io/intro-component-with-signup-form/)
+- View Submission: [Frontend Mentor](https://www.frontendmentor.io/solutions/html5-css3-javascript-jquery-Jm2bkJUt3)
+- View Site: [GitHub Pages](https://mikeattah.github.io/frontend-mentor-intro-component-with-signup-form/)
 
 ## My process
 
@@ -52,6 +52,6 @@ I will continue to improve on my knowledge of regex and jQuery.
 
 ## Author
 
-- Website - [Mike Attah](https://mikeattah.com)
-- Frontend Mentor - [@mikeattah](https://www.frontendmentor.io/profile/mikeattah)
-- Twitter - [@miikeattah](https://www.twitter.com/miikeattah)
+- Website: [Mike Attah](https://mikeattah.com)
+- Frontend Mentor: [@mikeattah](https://www.frontendmentor.io/profile/mikeattah)
+- Twitter: [@mikeattahh](https://www.twitter.com/miikeattahh)
